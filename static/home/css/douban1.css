@@ -1,0 +1,359 @@
+/* 海报头图 */
+#mainpic {
+	height: 202.5px;
+	transition: all 0.1s;
+	transition-timing-function: ease-out;
+}
+
+#mainpic:hover {
+	box-shadow: 0 0 2px #000000;
+}
+
+/* 短评头像 */
+div.avatar1 {
+	float: left;
+}
+
+/* 总div */
+.grid-16-8 {
+	border-radius: 0.5rem;
+	border: 1px solid;
+	width: 46rem;
+	background-image: linear-gradient(#E7E7E7, #EEEEEE);
+	background: whitesmoke;
+	padding-top: 1rem;
+	padding-left: 47px;
+	overflow: auto;
+	margin: 1rem auto;
+	box-shadow: 5px 5px 10px gray;
+	display: block;
+
+}
+
+.grid-16-8 .article {
+	width: 40rem;
+	height: auto;
+}
+
+/* 影片信息 */
+.subjectwrap {
+	border-radius: 0.5rem;
+	border: 2px solid;
+	padding: 1rem 1.5rem;
+	box-shadow: 5px 5px 3px #AFAFAF;
+	margin-bottom: 1.5rem;
+	transition: border-radius 1s,box-shadow 0.3s;
+	transition-timing-function: ease;
+}
+.subjectwrap:hover {
+	border-radius: 0.6rem;
+	box-shadow: 5px 5px 6px #AFAFAF;
+}
+
+
+/* 剧情简介 */
+.related-info {
+	border-radius: 0.5rem;
+	border: 2px solid;
+	padding: 0.5rem 1.5rem;
+	box-shadow: 5px 5px 3px #AFAFAF;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	transition: border-radius 1s,box-shadow 0.3s;
+	transition-timing-function: ease;
+}
+.related-info:hover{
+	border-radius: 0.7rem;
+	box-shadow: 5px 5px 6px #AFAFAF;
+}
+.indent{
+	font-size: 18px;
+	line-height: 35px;
+	font-weight: 400;
+}
+/* 演员 */
+.celebrities {
+	border-radius: 0.5rem;
+	border: 2px solid;
+	padding: 1rem 1.5rem;
+	box-shadow: 5px 5px 3px #AFAFAF;
+	margin-top: 1rem;
+	margin-bottom: 1.5rem;
+	transition: border-radius 1s,box-shadow 0.3s;
+	transition-timing-function: ease-out;
+}
+.celebrities:hover{
+	border-radius: 0.7rem;
+	box-shadow: 5px 5px 6px #AFAFAF;;
+}
+/* 短评 */
+.mod-bd {
+	border-radius: 0.5rem;
+	border: 2px solid;
+	padding: 1rem 1.5rem;
+	box-shadow: 5px 5px 3px #AFAFAF;
+	margin-top: 1rem;
+	overflow: auto;
+	margin-bottom: 1rem;
+	transition: border-radius 1s,box-shadow 0.3s;
+	transition-timing-function: ease-out;
+	display:inline-block;
+	height: auto;
+}
+.mod-bd:hover{
+	border-radius: 0.7rem;
+	box-shadow: 5px 5px 6px #AFAFAF;
+}
+#comments {
+	height:50%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: auto;
+}
+/* 标题1 */
+.title1 {
+	background-color:rgba(18, 18, 18, 0.7);
+	display:table;
+	width: auto;
+	height: 3rem;
+	padding-right: 1rem;
+	border-radius: 2px;
+	padding-left: 1rem;
+	padding-top:0.75rem;
+	margin-bottom: -2.5rem;
+	margin-left: -1.5rem;
+	border: 3px solid white;
+	box-shadow: 2px 2px 1px #454545;
+	filter: opacity(95%);
+	transition: all 0.2s;
+	transition-delay: 0.2s;
+	transition-timing-function: ease;
+}
+.title1:hover{
+	box-shadow: 5px 2px 4px #454545;
+}
+/* 演员图片 */
+.avatar {
+	border: 1px solid black;
+	box-shadow: 0 0 2px #31323B;
+	transition: all 0.1s;
+	transition-timing-function: ease-out;
+	position: relative;
+	top: 1.5rem;
+	margin-right: 9px;
+}
+
+.avatar:hover {
+	box-shadow: 0 0 4px #31323B;
+}
+
+.info {
+	text-align: center;
+	display: block;
+	height:5rem;
+	position: relative;
+	top: 1.5rem;
+	
+	
+}
+
+body,
+td,
+th {
+	font: 12px Helvetica, Arial, sans-serif;
+	line-height: 1.62
+}
+
+html body,
+html td,
+html th,
+html .pl,
+html input {
+	font-size: 13px;
+}
+
+h2 {
+	font: 20px Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+      margin-top: 0px;
+	color:whitesmoke;
+}
+
+#mainpic a img {
+	height: 202.5px;
+}
+
+a img {
+	border-width: 0;
+	vertical-align: middle
+}
+
+#mainpic {
+	margin: 3px 0 0 0;
+	float: left;
+	text-align: center;
+	margin: 3px 12px 0 0;
+	max-width: 155px;
+	overflow: hidden;
+}
+
+#celebrities .celebrities-list .avatar {
+	margin: 0 auto;
+	height: 133px;
+	background-repeat: no-repeat;
+	background-size: 95px 133px;
+	background-position: center;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul,
+ol {
+	list-style: none;
+	list-style-type: none;
+}
+
+#celebrities .celebrities-list.__oneline li {
+	display: inline-block;
+	vertical-align: top;
+	width: 95px;
+	font-size: 13px;
+	margin-left: 21px;
+}
+
+.pl {
+	font: 12px Arial, Helvetica, sans-serif;
+	line-height: 150%;
+	color: #666666
+}
+/* 各种超链接样式 */
+a:link {
+    color:#37a;
+    text-decoration: none;
+}
+a:hover {
+	color: #F0F0F0;
+	text-decoration: none;
+	text-shadow:0 0 2px black;
+}
+a.name:hover {
+    color: #F0F0F0;
+    text-decoration: none;
+    text-shadow:0 0 2px black;
+}
+/* 演员信息 */
+span.name{
+	display: block;
+	width: 5rem;
+	margin: 0 auto;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.info {
+	text-align: center;
+	display: block;
+	height:2.5rem;
+	background: #C1C1C1;
+	margin-top: 0.4rem;
+	margin-bottom: 2rem;
+	padding-left:7px;
+	padding-top:7px;
+	border: 1px solid;
+	border-radius: 2px;
+	border-bottom: 1px solid rgba(0,0,0,0.5);
+	background-clip: content-box;
+	box-shadow: 8px 8px 0 #C1C1C1;
+	right: 3.5px;
+}
+
+span.role{
+
+}
+span.name a {
+    color:#111;
+}
+/* 评分 */
+.rating_self{
+	text-align: center;
+	display: block;
+	width: 8rem;
+	float:right;
+	background-color:rgba(18, 18, 18, 0.1);
+	border:3px double none;
+	box-shadow: 2px 2px 3px #AFAFAF;
+	transition: all 0.3s;
+	transition-timing-function: ease-out;
+	margin-top: -130px;
+}
+.rating_self:hover{
+	box-shadow: 3px 3px 5px #AFAFAF;
+}
+.ratingfont{
+	font-size:1rem;
+	font-weight: normal;
+}
+.ratingfont2{
+	font:italic 2rem arial,sans-serif;
+	font-weight: bold;
+}
+/* 波浪动画 */
+.container1 {
+  position: fixed;
+  width: 200rem;
+  height: 200rem;
+  padding: 5px;
+  top:20vh;
+  left:50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  overflow: hidden; 
+  z-index:-1;
+  }
+.wave {
+  position: relative;
+  width: 200rem;
+  height:200rem;
+  background-image:linear-gradient(#ABFBD5, #81F7BE);
+  overflow: hidden; 
+  border-radius: 50%; }
+  .wave::before, .wave::after {
+    content: "";
+    position: fixed;
+	width: 400rem;
+	height: 400rem;
+	top:5%;
+	left:50%;
+    background-color: rgba(19,205,145, 0.4);
+	/* border-left:10px solid rgba(210,238,138,0.8); */
+	box-shadow:0.5rem 0 0 rgba(255,206,110,0.8);
+    border-radius: 45%;
+    transform: translate(-50%, -70%) rotate(0);
+    animation: rotate 6s linear infinite;
+	overflow: hidden; 
+    z-index: 10; }
+  .wave::after {
+    border-radius: 47%;
+    background-color: rgba(24,140,126, 0.5);
+    transform: translate(-50%, -70%) rotate(0);
+    animation: rotate 10s linear -5s infinite;
+    z-index: 10; 
+	overflow: hidden; 
+	}
+
+@keyframes rotate {
+  50% {
+    transform: translate(-50%, -73%) rotate(180deg); }
+  100% {
+    transform: translate(-50%, -70%) rotate(360deg); } }
+
+@keyframes rotate {
+  50% {
+    transform: translate(-50%, -73%) rotate(180deg); }
+  100% {
+    transform: translate(-50%, -70%) rotate(360deg); } }

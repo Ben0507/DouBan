@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html >
+{# 引入父类的css文件 #}
+
+{% block extjs %}
+    <script src="{% static 'register/jquery.js' %}"></script>
+    <script src="{% static 'register/swiper.jquery.js' %}"></script>
+    <script src="{% static 'register/register.js' %}"></script>
+{% endblock %}
+{% block extcss %}
+        <link rel="stylesheet" href="../../static/home/css/login.css">
+{% endblock %}
+<body>
+<div class="wrapper">
+    <div class="container">
+        <h1>Register<br><span style="font-size: 15px;">用户注册</span></h1>
+            <form id="log_form" >
+                {% csrf_token %}
+					<input type="text" placeholder="Username" name="username">
+					<input type="password" placeholder="Password" name="password">
+                    <input type="text" placeholder="key" name="key">
+					<button type="button" id="registe-button">registe</button>
+					<a href="/logins/"><button type="button">back</button></a>
+				</form>
+			</div>
+    </div>
+
+    <ul class="bg-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+</body>
+
+</html>

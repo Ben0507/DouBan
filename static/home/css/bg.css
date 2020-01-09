@@ -1,0 +1,66 @@
+/* 波浪动画 */
+.container1 {
+	position: fixed;
+	width: 300rem;
+	height: 300rem;
+	padding: 5px;
+	top: 25vh;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	overflow: hidden;
+	z-index: -1;
+}
+
+.wave {
+	position: relative;
+	width: 300rem;
+	height: 300rem;
+	background-image:linear-gradient(#ABFBD5, #81F7BE);
+	border-radius: 50%;
+}
+
+.wave::before,
+.wave::after {
+	content: "";
+	position: fixed;
+	width: 600rem;
+	height: 600rem;
+	top: 5%;
+	left: 50%;
+	background-color: rgba(19,205,145, 0.4);
+	/* border-left:10px solid rgba(210,238,138,0.8); */
+	box-shadow:0.5rem 0 0 rgba(255,206,110,0.8);
+	border-radius: 45%;
+	transform: translate(-50%, -70%) rotate(0);
+	animation: rotate 6s linear infinite;
+	z-index: 10;
+}
+
+.wave::after {
+	border-radius: 47%;
+	background-color: rgba(24,140,126, 0.5);
+	transform: translate(-50%, -70%) rotate(0);
+	animation: rotate 10s linear -5s infinite;
+	z-index: 10;
+}
+
+@keyframes rotate {
+	50% {
+		transform: translate(-50%, -73%) rotate(180deg);
+	}
+
+	100% {
+		transform: translate(-50%, -70%) rotate(360deg);
+	}
+}
+
+@keyframes rotate {
+	50% {
+		transform: translate(-50%, -73%) rotate(180deg);
+	}
+
+	100% {
+		transform: translate(-50%, -70%) rotate(360deg);
+	}
+}

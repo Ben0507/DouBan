@@ -1,0 +1,47 @@
+#pagination{
+            /*width: 50%;
+            height: 100px;
+            border: 2px solid gainsboro;           */
+            /*margin: 50px auto ;
+            padding-top: 50px ;
+            padding-left: 50px;*/
+           height: 35px;
+           width: 100px;
+        }
+        
+        .over,.pageItem{
+            float: left;
+            display: block;
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+        }
+        
+        .pageItem{
+            border: 1px solid gray;
+            text-decoration: none;
+            color: dimgrey;
+            margin-right: -1px;/*解决边框加粗问题*/
+        }
+        .pageItem:hover{
+            background-color: rgba(0,0,0,0.4);
+            color:white ;
+        }
+        .clearfix{
+            clear: both;
+        }
+        .active{
+            background-color: rgba(144,144,144,0.4);
+            color:white ;
+        }
+        .banBtn{
+            border:1px solid gray;
+            color: #ff980069;
+        }
+        #prevBtn{
+            margin-right: 10px;
+        }
+        #nextBtn{
+            margin-left: 10px;
+        }

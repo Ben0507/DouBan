@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    {% load static %}
+    {#加载js文件#}
+    {% block extjs %}
+        <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="../../static/home/js/home.js"></script>
+        <script src="{% static 'home/js/jquery.js' %}"></script>
+        <script src="{% static 'home/js/autocomplete.js' %}" type="application/javascript"></script>
+    {% endblock %}
+    {#加载css文件#}
+    {% block extcss %}
+        <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href={% static 'home/css/shouye.css' %}/>
+        <link rel="stylesheet" href={% static 'home/css/style.css' %}/>
+        <link rel="stylesheet" href={% static 'home/css/autocomplete.css' %}/>
+        <link href="../../static/home/css/bg.css" rel="stylesheet" />
+
+    {% endblock %}
+
+
+</head>
+
+<script>
+    function guanyu() {
+        alert("守护最后一寸发际线队");
+    }
+
+</script>
+{% block base %}
+    <body>
+    <div class="container1">
+        <div class="wave"></div>
+    </div>
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <nav class="navbar navbar-default navbar-inverse" role="navigation">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1"><span
+                                class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                                class="icon-bar"></span><span class="icon-bar"></span></button>
+                        <a class="navbar-brand" href="#" style="color: white;"><span><strong>达内电影</strong></span></a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav" id="nav">
+                            <li class="active">
+                                <a href="#">电影</a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="guanyu()">关于</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">开发人员<strong
+                                        class="caret"></strong></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">林温娴</a>
+                                    </li>
+                                    <li class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="#">苏文斌</a>
+                                    </li>
+                                    <li class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="#">邝富荣</a>
+                                    </li>
+                                    <li class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="#">陈佳伟</a>
+                                    </li>
+                                    <li class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="#">叶卓斌</a>
+                                    </li>
+                                    <li class="divider">
+                                </ul>
+                            </li>
+                        </ul>
+                       <div class="pull-right">
+                            <form class="navbar-form navbar-left" role="search">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="select" />
+                                        <ul id="list">
+                                        </ul>
+                                </div>
+                                <input type="button" class="btn btn-default" id="search" value="查找">&nbsp;
+                               <a href="/logins/"><span id="yonhuming" >{{ username }}</span></a>
+                            </form>
+                        </div>
+
+                    </div>
+
+                </nav>
+                <div class="page-header">
+                    <h1>
+                        <i>Welcome DANEI Movie!</i>
+                        <small>&nbsp;&nbsp;&nbsp;&nbsp;<i>enjoy yourself</i></small>
+                    </h1>
+                </div>
+                <div class="carousel slide" id="carousel-623802">
+
+                    <div class="carousel-inner">
+                        <ol class="carousel-indicators">
+                            <li data-slide-to="0" data-target="#carousel-623802" class="active">
+                            </li>
+                            <li data-slide-to="1" data-target="#carousel-623802">
+                            </li>
+                            <li data-slide-to="2" data-target="#carousel-623802">
+                            </li>
+                            <li data-slide-to="3" data-target="#carousel-623802">
+                            </li>
+                        </ol>
+                        <div class="item active">
+                            <img alt="" src="../../static/home/img/1.jpg"/>
+                            <div class="carousel-caption">
+                                <h4>
+                                    千与千寻
+                                </h4>
+                                <p>
+                                    该片讲述了少女千寻意外来到神灵异世界后，为了救爸爸妈妈，经历了很多磨难的故事.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img alt="" src="../../static/home/img/1.jpg"/>
+                            <div class="carousel-caption">
+                                <h4>
+                                    这个杀手不太冷
+                                </h4>
+                                <p>
+                                    该片讲述了少女千寻意外来到神灵异世界后，为了救爸爸妈妈，经历了很多磨难的故事.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img alt="" src="../../static/home/img/1.jpg"/>
+                            <div class="carousel-caption">
+                                <h4>
+                                    龙猫
+                                </h4>
+                                <p>
+                                    该片讲述了少女千寻意外来到神灵异世界后，为了救爸爸妈妈，经历了很多磨难的故事.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img alt="" src="../../static/home/img/1.jpg"/>
+                            <div class="carousel-caption">
+                                <h4>
+                                    Third 电影标题
+                                </h4>
+                                <p>
+                                    内容概要
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#carousel-623802" data-slide="prev"><span
+                            class="glyphicon glyphicon-chevron-left"></span></a>
+                    <a class="right carousel-control" href="#carousel-623802" data-slide="next"><span
+                            class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+                <hr>
+                <div class="container row" id="remen" name="remen">
+                    <p><span class="glyphicon glyphicon-fire "></span>&nbsp;<strong>电影Top9</strong></p>
+                </div>
+                <div class="row ">
+                    {% for movie in movielists1 %}
+                        <div class="col-md-4 ">
+                            <div class="thumbnail">
+                                <img alt="{{ movie.mname }}" src="{{ movie.mphoto }}"
+                                     style="width: 270px ; height: 384px"/>
+                                <div class="caption ">
+                                    <h3>
+                                        {{ movie.mname }}
+                                    </h3>
+                                    <p><span>评分:</span>
+                                        {{ movie.score }}
+                                    </p>
+                                    <p>
+                                        <a class="btn btn-success " href="/details/?id={{ movie.movie_id }}">进入</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="row ">
+                    {% for movie in movielists2 %}
+                        <div class="col-md-4 ">
+                            <div class="thumbnail">
+                                <img alt="{{ movie.mname }}" src="{{ movie.mphoto }}"
+                                     style="width: 270px ; height: 384px"/>
+                                <div class="caption ">
+                                    <h3>
+                                        {{ movie.mname }}
+                                    </h3>
+                                    <p><span>评分:</span>
+                                        {{ movie.score }}
+                                    </p>
+                                    <p>
+                                        <a class="btn btn-success " href="/details/?id={{ movie.movie_id }}">进入</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="row ">
+                    {% for movie in movielists3 %}
+                        <div class="col-md-4 ">
+                            <div class="thumbnail">
+                                <img alt="{{ movie.mname }}" src="{{ movie.mphoto }}"
+                                     style="width: 270px ; height: 384px"/>
+                                <div class="caption ">
+                                    <h3>
+                                        {{ movie.mname }}
+                                    </h3>
+                                    <p><span>评分:</span>
+                                        {{ movie.score }}
+                                    </p>
+                                    <p>
+                                        <a class="btn btn-success" href="/details/?id={{ movie.movie_id }}">进入</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 column">
+            <ul class="breadcrumb">
+                <li>
+                    <a href="#" name="nav">Home</a>
+                </li>
+                <li>
+                    <a href="#" name="remen">热门</a>
+                </li>
+                <li class="active">
+                    <a href="/list/">更多</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </body>
+{% endblock %}
+</html>

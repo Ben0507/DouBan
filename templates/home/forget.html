@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html >
+{# 引入父类的css文件 #}
+<link rel="stylesheet" href="{% static 'forget/forget.css' %}">
+{% block extjs %}
+    <script src="{% static 'forget/jquery.js' %}"></script>
+    <script src="{% static 'forget/swiper.jquery.js' %}"></script>
+    <script src="{% static 'forget/forget.js' %}"></script>
+{% endblock %}
+<body>
+<div class="wrapper">
+    <div class="container">
+        <h1>Forget<br><span style="font-size: 15px;"></span></h1>
+            <form id="log_form" >
+                {% csrf_token %}
+					<input type="text" placeholder="Username" name="username">
+					<input type="password" placeholder="key" name="key">
+                    <input type="password" placeholder="Password" name="password">
+					<button type="button" id="forget_button">forget</button>
+					<a href="/logins/"><button type="button">back</button></a>
+				</form>
+			</div>
+    </div>
+
+    <ul class="bg-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+</body>
+
+</html>
